@@ -2,7 +2,7 @@
 #this script displays Best School 9 times and Hi 1 time
 counter=0
 while [ $counter -lt 10 ]; do
-	if [ $counter = 9 ]; then
+	if [ $counter -eq 9 ]; then
 		echo "Hi"
 	else
 		echo "Best School"
