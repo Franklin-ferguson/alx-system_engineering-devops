@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#dispalys the name of all files except hidden files starting after
+#the "-" sign.
+for file in *; do
+      if [[ ! "$file" == .* && -f "$file" ]]; then
+	      name=$(echo "$file" | cut -d'-' -f2-)
+	      echo "- $name"
+	fi
+done
