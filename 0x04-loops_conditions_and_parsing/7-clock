@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#this script displays the clock, hours from 0 to 12
+#and minutes from 1 to 59.
+hours=0
+while [ $hours -lt 13 ]; do
+	echo "Hour: $hours"
+	minutes=1
+	while [ $minutes -lt 60 ]; do
+		echo "$minutes"
+		((minutes++))
+	done
+	((hours++))
+done
