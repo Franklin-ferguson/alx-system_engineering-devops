@@ -5,7 +5,7 @@
 
 """
 
-import request
+import requests
 from sys import argv
 
 if __name__ == "__main__":
@@ -26,11 +26,11 @@ if __name__ == "__main__":
 
     completed = []
 
-    for todo todos:
+    for todo in todos:
         if todo.get("completed") is True:
             completed.append(todo.get("title"))
 
-    print("Employee {} is done with task({}/{})".format(user.get(
+    print("Employee {} is done with tasks({}/{})".format(user.get(
         "name"), len(completed), len(todos)))
 
     for complete in completed:
